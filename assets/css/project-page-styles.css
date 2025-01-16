@@ -1,0 +1,149 @@
+/* import poppins font from googleapi */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+/* global var */
+:root{
+    --body-color: rgb(250, 250, 250);
+    --color-white: rgb(255, 255, 255);
+
+    --text-color-second: rgb(68, 68, 68);
+    --text-color-third: rgb(30, 159, 171);
+
+    --first-color: rgb(110, 87, 224);
+    --first-color-hover: rgb(40, 91, 212);
+
+    --second-color: rgb(0, 201, 255);
+    --thrid-color: rgb(192, 166, 49);
+    --first-shadow-color: rgb(0, 0, 0, 0.1);
+}
+
+*{
+    margin: 0; 
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar{
+    width: 10px;
+    border-radius: 25px;
+}
+
+::-webkit-scrollbar-track{
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ccc;
+    border-radius: 30px;
+}
+::-webkit-scrollbar-thumb:hover{
+    background: #bbb;
+}
+
+.wrapper{
+    padding-inline: 10vw;
+}
+
+section{
+    padding-block: 5em;
+}
+
+.project-title{
+    display: flex;
+    justify-content: center;
+    margin: 0 0 50px;
+}
+
+.project-button{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 0 50px;
+}
+
+.btn{
+    font-weight: 500;
+    padding: 12px 20px;
+    background: #efefef;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .4s;
+}
+
+.project-button a>.blue-btn{
+    background: var(--first-color);
+    color: var(--color-white);
+}
+
+.project-button a>.blue-btn:hover{
+    background: var(--first-color-hover);
+}
+
+.project-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+    margin: 0 0 100px;
+}
+
+.project-description h3{
+    text-align: center;
+}
+
+.project-description p{
+    text-align: center;
+}
+
+.project-demo{
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    gap: 20px;
+    margin: 0 auto 50px;
+    align-items: center;
+}
+
+.project-gif{
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+    overflow: visible;
+}
+
+.project-gif img{
+    width: 500px;
+    object-fit: scale-down;
+} 
+
+.project-paper{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.project-paper i{
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 1200px) {
+    .project-demo{
+        justify-content: center;
+        flex-direction: column;
+    }
+
+    .project-gif{
+        margin: 0 0 50px;
+    }
+}
